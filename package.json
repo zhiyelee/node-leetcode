@@ -1,0 +1,24 @@
+{
+  "name": "leetcode",
+  "version": "1.0.0",
+  "description": "leetcode helper library, such as create ListNode, Tree from array",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/zhiyelee/node-leetcode.git"
+  },
+  "keywords": [
+    "leetcode",
+    "ListNode",
+    "TreeNode"
+  ],
+  "author": "zhiyelee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhiyelee/node-leetcode/issues"
+  },
+  "homepage": "https://github.com/zhiyelee/node-leetcode#readme"
+}
