@@ -25,7 +25,7 @@ function toArray(node) {
   return ans;
 }
 
-exports.nodeList = {
+exports.List = {
   create: createList,
   toArray: toArray
 };
@@ -67,6 +67,6 @@ function createTree(arr) {
   return res;
 }
 
-exports.tree = {
+exports.Tree = {
   create: createTree
 };
