@@ -14,6 +14,9 @@ function createList(arr) {
   return head.next;
 }
 
+ListNode.prototype.toArray = function () {
+  return toArray(this);
+}
 
 function toArray(node) {
   var ans = [];
@@ -26,10 +29,9 @@ function toArray(node) {
 }
 
 exports.List = {
-  create: createList,
-  toArray: toArray
+  node: ListNode,
+  create: createList
 };
-
 
 function TreeNode(val) {
   this.val = val;
@@ -68,5 +70,6 @@ function createTree(arr) {
 }
 
 exports.Tree = {
-  create: createTree
+  node: TreeNode,
+  create: createTree,
 };
