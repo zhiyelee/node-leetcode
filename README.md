@@ -37,6 +37,11 @@ var List = require('leetcode').List;
 var l = List.create([1, 2, 3]);
 ```
 
+#### List.toArray
+
+Same as `ListNode.prototype.toArray`.
+
+
 ### Tree
 
 ```js

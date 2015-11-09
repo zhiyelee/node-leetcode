@@ -30,7 +30,7 @@ function toArray(node) {
 
 exports.List = {
   node: ListNode,
-  create: createList
+  create: createList,
   toArray: toArray
 };
 
