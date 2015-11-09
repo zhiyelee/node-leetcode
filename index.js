@@ -31,6 +31,7 @@ function toArray(node) {
 exports.List = {
   node: ListNode,
   create: createList
+  toArray: toArray
 };
 
 function TreeNode(val) {
