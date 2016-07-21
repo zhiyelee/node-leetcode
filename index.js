@@ -1,3 +1,4 @@
+'use strict';
 function ListNode(val) {
     this.val = val;
     this.next = null;
@@ -43,7 +44,7 @@ function TreeNode(val) {
 // https://leetcode.com/faq/#binary-tree
 function createTree(arr) {
   if (!arr.length || arr[0] === null) return null;
-  
+
   var res = new TreeNode(arr[0]);
   var nodes = arr.slice(1);
   var children = [res];

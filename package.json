@@ -4,7 +4,7 @@
   "description": "Leetcode helper library, such as create List, Tree from array",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/zhiyelee/node-leetcode/issues"
   },
-  "homepage": "https://github.com/zhiyelee/node-leetcode#readme"
+  "homepage": "https://github.com/zhiyelee/node-leetcode#readme",
+  "devDependencies": {
+    "mocha": "^2.5.3"
+  }
 }
