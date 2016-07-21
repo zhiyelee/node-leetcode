@@ -43,27 +43,31 @@ function TreeNode(val) {
 // https://leetcode.com/faq/#binary-tree
 function createTree(arr) {
   if (!arr.length || arr[0] === null) return null;
-  var len = arr.length;
-
+  
   var res = new TreeNode(arr[0]);
   var nodes = arr.slice(1);
   var children = [res];
-  var current = res;
   while(children.length) {
-    current = children.shift();
+    let current = children.shift();
 
     if (!current || current.val === null) {
       continue;
     }
 
     if (nodes.length) {
-      current.left = new TreeNode(nodes.shift());
-      children.push(current.left);
+      let val = nodes.shift();
+      if (val) {
+        current.left = new TreeNode(val);
+        children.push(current.left);
+      }
     }
 
     if (nodes.length) {
-      current.right = new TreeNode(nodes.shift())
-      children.push(current.right);
+      let val = nodes.shift();
+      if (val) {
+        current.right = new TreeNode(val);
+        children.push(current.right);
+      }
     }
   }
 
